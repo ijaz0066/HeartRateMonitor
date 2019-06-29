@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Heart Rate View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HeartRateViewController" customModule="HeartRateMonitor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heart Rate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fge-wd-EB8">
+                                <rect key="frame" x="122" y="164" width="170" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="axq-CM-S3C"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="rAE-RZ-rdr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMP-5q-Dg7">
+                                <rect key="frame" x="122" y="219" width="170" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="2FG-xJ-XS1"/>
+                                    <constraint firstAttribute="height" constant="81" id="MFj-Nx-S4X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sensor Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYy-Qy-ELD">
+                                <rect key="frame" x="78.5" y="390" width="257.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="TFY-Ik-tL5"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="257.5" id="eEi-Ta-O5t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="---" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2i0-aQ-uxx">
+                                <rect key="frame" x="122" y="445" width="170" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="ZVd-jr-XvA"/>
+                                    <constraint firstAttribute="height" constant="81" id="eic-NL-ycP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YMP-5q-Dg7" firstAttribute="top" secondItem="Fge-wd-EB8" secondAttribute="bottom" constant="15" id="CvV-qf-HfT"/>
+                            <constraint firstItem="2i0-aQ-uxx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HPJ-7m-zU3"/>
+                            <constraint firstItem="Fge-wd-EB8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J92-rT-WKP"/>
+                            <constraint firstItem="YMP-5q-Dg7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TNi-mo-UXU"/>
+                            <constraint firstItem="Fge-wd-EB8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="U7D-l4-OrQ"/>
+                            <constraint firstItem="2i0-aQ-uxx" firstAttribute="top" secondItem="ZYy-Qy-ELD" secondAttribute="bottom" constant="15" id="ci8-Bn-5zk"/>
+                            <constraint firstItem="ZYy-Qy-ELD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fqv-Cb-V0g"/>
+                            <constraint firstItem="ZYy-Qy-ELD" firstAttribute="top" secondItem="YMP-5q-Dg7" secondAttribute="bottom" constant="90" id="icu-6s-H8R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="heartRateLabel" destination="YMP-5q-Dg7" id="dAf-E7-hOF"/>
+                        <outlet property="sensorLocationLabel" destination="2i0-aQ-uxx" id="tXS-Ma-c5o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+</document>
